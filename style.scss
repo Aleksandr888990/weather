@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        width: 600px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+        padding-left: 20px;
+        font-family: "Nunito";
+        .cities{
+            height: 60px;
+            margin-top: 20px;
+            font-size: 50px;
+            text-transform: capitalize;
+        }
+        .description{
+            height: 30px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .temperature_icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 140px;
+            margin-top: 10px;
+            font-size: 100px;
+            .temperature{
+                height: 140px;
+                width: 200px;
+                padding-top: 0;
+                display: flex;
+                flex-direction: row;
+                
+            }
+            .icon{
+                margin-right: 50px;
+                img{
+                    width: 140px;
+                    height: 140px;
+                    background-size: cover;
+                }
+            }
+        }
+        .winds{
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            font-size: 30px;
+            p{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        .humiditys{
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            font-size: 30px;
+            margin-top: 5px;
+            p{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
