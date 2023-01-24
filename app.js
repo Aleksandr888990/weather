@@ -3,7 +3,7 @@ const city = prompt("Enter your city");
 let showCity = document.querySelector(".cities");
 showCity.innerHTML = city;
 
-fetch (`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`)
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -22,6 +22,5 @@ fetch (`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&AP
     mainWind.innerHTML = myWind;
     let myHumidity = data.main.humidity;
     let mainHumidity = document.querySelector(".humidity");
-    mainHumidity.innerHTML = myHumidity;
-    
+    mainHumidity.innerHTML = myHumidity;    
   });
